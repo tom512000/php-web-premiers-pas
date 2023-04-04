@@ -13,16 +13,22 @@ $html = <<<HTML
     <style>
         div.calculs {
             display: flex;
+            background-color: green;
+            width: auto;
+            height: auto;
+            align-items: flex-end;
         }
         tr {
             display: flex;
-            width: 100%;
-            height: 100%;
+            background-color: red;
+            width: auto;
+            height: auto;
         }
         td {
             display: flex;
-            width: 100%;
-            height: 100%;
+            width: auto;
+            height: auto;
+            background-color: pink;
             flex-direction: flex-end;
         }
     </style>
