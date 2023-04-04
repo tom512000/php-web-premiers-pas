@@ -1,2 +1,4 @@
 .pptx
 .idea
+venv/
+__pycache__
