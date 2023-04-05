@@ -14,7 +14,7 @@
 - ✔️ 4. Table des 12
 - ✔️ 5. Visualisation des échanges HTTP entre le client et le serveur Web local
 - ✔️ 6. Visualiser le résultat de vos programmes
-- ✖️ 7. 12 c'est bien, 42 c'est mieux
+- ✔️️ 7. 12 c'est bien, 42 c'est mieux
 - ✖️ 8. Visualisation des paramètres de requête HTTP transmis au serveur
 - ✖️ 9. Problématique de la réflexion (reflected XSS)
 - ✖️ 10. Production d'URL avec des paramètres
