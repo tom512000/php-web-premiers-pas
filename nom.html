@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+    <title>Saisie d'un nom</title>
+    <style>
+        input[name=nom] {
+            width : 10em;
+        }
+        input[type=submit],
+        label {
+            display : block;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Laissez-moi vous saluer !</h1>
+    <form name='formu' action='bonjour.php' method='GET'>
+      <label>Donnez-moi votre nom&nbsp;<input type='text' name='nom' required></label>
+      <input type='submit' value='Laissez-moi vous saluer !'>
+    </form>
+  </body>
+</html>
