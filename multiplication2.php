@@ -11,41 +11,37 @@ $html = <<<HTML
     <meta charset="utf-8">
     <title>{$titre}</title>
     <style>
-        div.calculs {
+         div.bloc {
             display: flex;
-            background-color: green;
-            width: auto;
-            height: auto;
-            align-items: flex-end;
-        }
-        tr {
-            display: flex;
-            background-color: red;
+            flex-direction: column;
             width: auto;
             height: auto;
         }
-        td {
+
+        div.ligne {
             display: flex;
-            width: auto;
-            height: auto;
-            background-color: pink;
-            flex-direction: flex-end;
+            flex-direction: row;
+        }
+
+        div.infos {
+            width: 50px;
+            text-align: right;
         }
     </style>
   </head>
   <body>
     <h1>{$titre}</h1>
-    <div class='calculs'>\n
+    <div class='bloc'>\n
 HTML;
 
-for ($i=1; $i<=10; $i++) {
+for ($i=0; $i<=10; $i++) {
     $res = $i*12;
     $html .= <<<HTML
-            <tr>
-                <td> $i</td>
-                <td> &times; 12 = </td>
-                <td>$res</td>
-            </tr><br>\n
+            <div class='ligne'>
+                <div class='infos'> $i</div>
+                <div class='infos'> &times; 12 = </div>
+                <div class='infos'>$res</div>
+            </div>\n
 HTML;
 }
 
