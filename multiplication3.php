@@ -1,7 +1,8 @@
 <?php
 
 declare(strict_types=1);
-if (isset($_GET["n"])) { # Si $_GET["n"] n'est pas nul
+if (isset($_GET['n']) && !empty($_GET['n']) && ((int) $_GET['n'] == $_GET['n'])) {
+    # Si $_GET["n"] n'est pas null, n'est pas vide et sa valeur en string et int est égale.
     $n = $_GET["n"];
 } else {
     die("Pas de paramètre");
