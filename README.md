@@ -19,5 +19,5 @@
 - ✔️ 9. Problématique de la réflexion (reflected XSS)
 - ✔️ 10. Production d'URL avec des paramètres
 - ✔️ 11. Liste de choix
-- ✖️ 12. Table de Pythagore
+- ✔️ 12. Table de Pythagore
 - ✖️ 13. Sujet complémentaire
