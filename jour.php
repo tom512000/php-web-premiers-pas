@@ -5,8 +5,8 @@ declare(strict_types=1);
 $titre = "Le jour de la semaine choisi";
 $jour = "n'est pas très clair...";
 
-if (isset($_POST['choix-jour']) && !empty($_POST['choix-jour']) &&  strip_tags($_POST['choix-jour']) && htmlspecialchars($_POST['choix-jour']) || $_POST['choix-jour'] != "Choisissez...") {
-    $jour = preg_replace('@<(.+)[^>]*>.*?@is', '', $_POST['choix-jour']);
+if (isset($_POST['choix-jour']) && !empty($_POST['choix-jour']) &&  strip_tags($_POST['choix-jour']) && htmlspecialchars($_POST['choix-jour']) && $_POST['choix-jour'] != "Choisissez...") {
+    $jour = "s'est porté sur ".preg_replace('@<(.+)[^>]*>.*?@is', '', $_POST['choix-jour']);
 }
 
 $html = <<<HTML

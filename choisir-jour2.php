@@ -14,7 +14,7 @@ $html = <<<HTML
     </head>
     <body>
         <h1>$titre</h1>
-        <form name="form" method="POST" action="jour.php">\n
+        <form name="form" method="POST" action="jour.php">
 HTML;
 
 foreach ($jours as $num => $jour) {
